@@ -6,6 +6,10 @@ description: JDownloader is a free, open-source download management tool with a 
 grade: stable
 confinement: strict
 base: core18
+architectures:
+  - build-on: amd64
+    run-on:
+      - amd64
 parts:
   jdownloader:
     plugin: dump
