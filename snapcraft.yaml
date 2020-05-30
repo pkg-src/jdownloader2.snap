@@ -24,6 +24,7 @@ apps:
     command: jdownloader
     plugs:
       - home
+      - removable-media
       - mount-observe
       - network
       - shutdown
