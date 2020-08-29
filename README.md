@@ -6,6 +6,7 @@
 
 ```bash
 snap install jdownloader2
+snap connect jdownloader2:removable-media
 ```
 
 ## Disclaimer
