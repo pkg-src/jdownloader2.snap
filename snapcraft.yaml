@@ -5,7 +5,7 @@ summary: JDownloader
 description: JDownloader is a free, open-source download management tool with a huge community of developers that makes downloading as easy and fast as it should be. Users can start, stop or pause downloads, set bandwith limitations, auto-extract archives and much more. It's an easy-to-extend framework that can save hours of your valuable time every day!
 grade: stable
 confinement: strict
-base: core18
+base: core20
 architectures:
   - build-on: amd64
     run-on:
@@ -15,17 +15,17 @@ parts:
     plugin: dump
     source: bin
     organize:
-      wrapper: usr/bin/jdownloader
-      JDownloader.jar: usr/bin/
+      wrapper: usr/local/bin/jdownloader
+      JDownloader.jar: usr/local/bin/
     build-packages:
       - ca-certificates
       - ca-certificates-java
-      - default-jre-headless
+      - default-jre
     stage-packages:
-      - default-jre-headless
+      - default-jre
 apps:
   jdownloader:
-    command: jdownloader
+    command: usr/local/bin/jdownloader
     plugs:
       - home
       - removable-media

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 if [ ! -f "${SNAP_USER_COMMON}/JDownloader.jar" ]; then
-    cp "${SNAP}/usr/bin/JDownloader.jar" "${SNAP_USER_COMMON}/JDownloader.jar"
+    cp "${SNAP}/usr/local/bin/JDownloader.jar" "${SNAP_USER_COMMON}/JDownloader.jar"
 fi
 
 export JAVA_HOME="${SNAP}/usr/lib/jvm/default-java"
