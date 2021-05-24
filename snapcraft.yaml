@@ -6,6 +6,7 @@ description: JDownloader is a free, open-source download management tool with a 
 grade: stable
 confinement: strict
 base: core20
+compression: lzo
 architectures:
   - build-on: amd64
     run-on:
