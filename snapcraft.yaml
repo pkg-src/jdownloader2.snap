@@ -5,7 +5,7 @@ summary: JDownloader
 description: JDownloader is a free, open-source download management tool with a huge community of developers that makes downloading as easy and fast as it should be. Users can start, stop or pause downloads, set bandwith limitations, auto-extract archives and much more. It's an easy-to-extend framework that can save hours of your valuable time every day!
 grade: stable
 confinement: strict
-base: core20
+base: core22
 compression: lzo
 architectures:
   - build-on: amd64
@@ -38,4 +38,4 @@ apps:
       - wayland
       - unity7
     extensions:
-      - gnome-3-38
+      - gnome
